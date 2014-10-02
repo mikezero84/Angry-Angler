@@ -2,7 +2,7 @@ INSTRUCCIONES
 =============
 1.- Clonar el repositorio de github
 
-2.- Corregir el proyecto tomando como base el archivo PSD adjunto. Ten cuenta lo siguiente:
+2.- Corregir el proyecto tomando como base el archivo PSD adjunto. Ten en cuenta lo siguiente:
 
 - Usar la menor cantidad de imagenes posible.
 - El slider del Home debe funcionar de manera cíclica y automáticamente.
