@@ -3,21 +3,35 @@
 <head> 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
 	<title>Angry Angler</title> 
-	<link href="styles.min.css" rel="stylesheet" type="text/css" /> 
+	<link rel="stylesheet" type="text/css" href="css/styles.min.css"/> 
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head> 
 <body> 
 	<div class="section header"> 
 		<div class="content"> 
 			<h1><a href="" class="logo" title="Angri Aangler"></a></h1> 
+			<div class="nav-top">
+				<ul>
+					<li><a href="#">Sign in</a></li>
+					<li><a href="#">New Guest?</a></li>
+					<li><a href="#">Customer Service</a></li>
+					<form class="form-wrapper cf">
+						<input type="text" id="buscar" name="buscar">
+						<button type="submit">Search</button>
+					</form>
+				</ul>
+			</div>
 			<div id="menucenter"></div> 
-			<nav> 
-				<ul> 
-					<li class="selected"><a href="index.html" title="Home">home</a></li> 
-					<li><a href="#" title="About">about</a></li> 
-					<li><a href="#" title="News">news</a></li> 
-					<li><a href="#" title="Contact">contact</a></li> 
-				</ul> 
-			</nav> 
+			<div class="nav-bar">
+				<nav> 
+					<ul> 
+						<li class="selected"><a href="index.html" title="Home">home</a></li> 
+						<li><a href="about.html" title="About">about</a></li> 
+						<li><a href="#" title="News">news</a></li> 
+						<li><a href="#" title="Contact">contact</a></li> 
+					</ul> 
+				</nav> 
+			</div>
 		</div> 
 	</div> 
 	<div class="section content"> 
@@ -31,7 +45,7 @@
 				<img src="images/banners/4.png" /> 
 			</div> 
 			<div class="box title"> 
-				<h3>Aenean Nonummy</h3>
+				<h3 id="title-round">Aenean Nonummy</h3>
 				<p class="title">Consectetur Adipiscing Elit</p> 
 				<p>Lorem ipsum dolor sit amet,<span style="font-weight:bold; color:#900;">consectetur adipiscing elit.</span> In rutrum diam nec metus ullamcorper consectetur. Sed tempor odio vitae mi imperdiet vulputate. Lorem ipsum dolor sit amet,consectetur adipiscing elit. Duis congue faucibus est,non volutpat nisi faucibus a. Nullam venenatis pretium justo sed adipiscing. Lorem ipsum dolor sit amet.</p> 
 				<p class="title">Rutrum Diam Nec</p> 
@@ -46,18 +60,18 @@
 			</div>
 			<div class="row 3cols"> 
 				<div class="box small"> 
-					<h3 style="font-size: 24px;color: #666;">Dolor</h3> 
-					<p>Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Praesent um lestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p> 
+					<h3 class="title-col">Dolor</h3> 
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent um lestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p> 
 					<p>Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Lestie lacus. Aenean nonummy hendrerit mauris. Phasellus portatysce suscipit varius mi. Cum sociis natoque penatibus et magnis dis.</p> 
 				</div> 
 				<div class="box small middle"> 
-					<h3 style="font-size: 24px;color: #666;">Hendrerit</h3> 
-					<p>Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Praesent um lestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p> 
+					<h3 class="title-col">Hendrerit</h3> 
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent um lestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p> 
 					<p>Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Lestie lacus. Aenean nonummy hendrerit mauris. Phasellus portatysce suscipit varius mi. Cum sociis natoque penatibus et magnis dis.</p> 
 				</div> 
 				<div class="box small"> 
-					<h3 style="font-size: 24px;color: #666;">Lestie</h3> 
-					<p>Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Praesent um lestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p> 
+					<h3 class="title-col">Lestie</h3> 
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent um lestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p> 
 					<p>Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Lestie lacus. Aenean nonummy hendrerit mauris. Phasellus portatysce suscipit varius mi. Cum sociis natoque penatibus et magnis dis.</p> 
 				</div> 
 			</div> 
@@ -65,7 +79,7 @@
 				<div class="center"></div> 
 				<div class="content"> 
 					<div class="block"> 
-						<h5 style="font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;color: #FFF;text-transform: uppercase;font-size: 12px;">HENDRERIT</h5> 
+						<h5 class="title-footer">HENDRERIT</h5> 
 						<p>Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Lestie lacus. Aenean nonummy hendrerit mauris. Phasellus portatysce suscipit varius mi. Cum sociis natoque penatibus et magnis dis.</p> 
 					</div> 
 					<ul class="menu"> 
@@ -94,6 +108,8 @@
 			</div>
 		</div>
 	</div>
-	<script src="scripts.js"></script> 
+	<script type="text/javascritp" src="js/scripts.js"></script> 
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/html5shiv.js"></script>
 </body> 
 </html>

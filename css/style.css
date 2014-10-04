@@ -1,0 +1,202 @@
+/**** general ****/
+
+body{
+	background: #fff;
+}
+
+a:link {
+    color: #333;
+}
+
+a:visited {
+    color: #333;
+}
+
+a:hover {
+    color: #333;
+}
+
+a:active {
+    color: #333;
+}
+/**** general ****/
+
+/**** header ****/
+.header .content h1 {
+	display: inline-block;
+}
+
+.nav-top{
+	font-family:"Trebuchet MS",Arial,Helvetica,sans-serif;
+	color:#333333;
+	width: 45%;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	float: right;
+}
+
+.nav-top ul{
+	list-style: none;
+}
+
+.nav-top ul li{
+	display: inline;
+	margin-right: 5px;
+	font-weight: bold;
+}
+
+.form-wrapper {
+	background: #EFEFEF;
+	border-radius: 10px;
+	border: 1px solid #CBCBCB;
+	height: 25px;
+	margin-top: 5px;
+	padding: 3px;
+	width: 350px;
+}
+
+.form-wrapper input {
+	background: #EFEFEF;
+	border: 0 none;
+	float: left;
+	height: 20px;
+	width: 260px;
+}
+
+.form-wrapper button {
+	overflow: visible;
+	position: relative;
+	float: right;
+	border: 0;
+	padding: 5px 12px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #fff;
+	text-transform: uppercase;
+	background: #45484d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #45484d 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+	position: relative;
+	top: -2px;
+}  
+
+.section.header{
+	background-position: 0 41px;
+}
+
+#menucenter{
+	top: 145px;
+}
+
+.nav-bar{
+	float: right;
+    position: relative;
+    top: -4px;
+    width: 410px;
+}
+
+#nav, nav{
+	display: top;
+	margin-top: 0;
+}
+
+#nav, nav ul{
+	list-style: none;
+}
+
+/**** header ****/
+
+/**** content ****/
+.box.title p{
+	margin: 20px;
+}
+
+#title-round{
+	position: relative;
+    top: -24px;
+}
+
+.box{
+	border-radius: 15px;
+	padding: 0;
+	margin:10px 0 5px 10px;
+}
+
+.box.small{
+	display: inline-block;
+	width: 31%;
+}
+
+.box.small p{
+	color: #333;
+	margin:15px;
+	font-size: 12px;
+}
+
+.title-col{
+	margin-left: 15px;
+	font-size: 24px;
+	color: #666;
+}
+/**** content ****/
+
+/**** footer ****/
+.title-footer{
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.footer .block {
+	display: inline-block;
+	float: none;
+}
+
+.footer ul.menu {
+	list-style: none;
+	display: inline-block;
+	width: 10%;
+}
+
+.footer .center{
+	background: url("../images/center-footer.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+	height: 41px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	left: 0;
+}
+
+.footer .content{
+	margin: 0 20px !important;
+	padding: 0;
+}
+
+
+.footer .copy {
+	margin: 0 auto 20px;
+	position: relative;
+	top: 10px;
+}
+
+.column{
+	display: inline-block;
+}
+
+.column.left{
+	width: 65%;
+}
+
+.column.right{
+	width: 32%;
+}
+
+/**** footer ****/
+
