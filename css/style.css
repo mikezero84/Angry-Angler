@@ -4,21 +4,7 @@ body{
 	background: #fff;
 }
 
-a:link {
-    color: #333;
-}
 
-a:visited {
-    color: #333;
-}
-
-a:hover {
-    color: #333;
-}
-
-a:active {
-    color: #333;
-}
 /**** general ****/
 
 /**** header ****/
@@ -44,6 +30,10 @@ a:active {
 	display: inline;
 	margin-right: 5px;
 	font-weight: bold;
+}
+
+.nav-top ul li a:link{
+	color: #333;
 }
 
 .form-wrapper {
@@ -92,6 +82,7 @@ a:active {
 
 #menucenter{
 	top: 145px;
+	z-index: 1000;
 }
 
 .nav-bar{
@@ -108,6 +99,10 @@ a:active {
 
 #nav, nav ul{
 	list-style: none;
+}
+
+#nav, nav ul li a{
+	color: #fff;
 }
 
 /**** header ****/
@@ -144,6 +139,70 @@ a:active {
 	font-size: 24px;
 	color: #666;
 }
+
+.box.title p{
+	font-size: 12px;
+} 
+
+
+.column{
+	display: inline-block;
+}
+
+.column.left{
+	width: 65%;
+	margin-bottom: 200px;
+}
+
+.column.right{
+	width: 32%;
+}
+
+.breadcrumb{
+	background: #E2E2E2;
+	height: 90px;
+	position: relative;
+	top:-16px;
+}
+
+.breadcrumb-peak{
+	background: url(../images/peak.jpg) no-repeat;
+	background-position: center;
+	height: 35px;
+	position: relative;
+	top:-16px;
+}
+
+.section.header.interior{
+	height: 350px;
+}
+
+#back{
+	background: url(../images/banners/left-arrow.png)no-repeat;
+	height: 40px;
+	width: 39px;
+	position: absolute;
+	left: -40px;
+	top: 50%;
+}
+
+#next{
+	background: url(../images/banners/right-arrow.png)no-repeat;
+	height: 40px;
+	width: 39px;
+	position: absolute;
+	right: -40px;
+	top: 50%;
+}
+
+.box.banner img {
+    left: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
 /**** content ****/
 
 /**** footer ****/
@@ -186,17 +245,7 @@ a:active {
 	top: 10px;
 }
 
-.column{
-	display: inline-block;
-}
 
-.column.left{
-	width: 65%;
-}
-
-.column.right{
-	width: 32%;
-}
 
 /**** footer ****/
 
