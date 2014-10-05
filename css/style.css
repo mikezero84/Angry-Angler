@@ -289,11 +289,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /**** Media Queries ****/
 
 /* Smartphones (landscape) ----------- */
-@media only screen and (max-width : 480px) {
+@media only screen and (min-width : 480px) and (max-width : 640px) {
 	/* Styles */
 	body,html, .section, .section.content, .content, .section.header .content{
-		min-width: 480px;
-		max-width: 480px;
+		min-width: 463px;
+		max-width: 463px;
+		margin: 0 auto;
 	}
 
 	.header .content h1{
