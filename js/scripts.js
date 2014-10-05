@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	console.log("Hola Softtek ;)");
+	//console.log("Hola Softtek ;)");
 	
 	$('.slide').first().addClass('active');
 	$('.slide').hide();    
@@ -17,7 +17,7 @@ $(document).ready(function(){
 		$('.oldActive').removeClass('oldActive');
 		$('.slide').fadeOut();
 		$('.active').fadeIn();
-		
+
 	});
 
 	$('#back').click(function(){
@@ -36,8 +36,12 @@ $(document).ready(function(){
 	function auto(){
 		interval = setInterval(function(){
 			$('#next').click();
-		},2000);
+		},3000);
 	}
 	auto();
+
+	$(".nav-menu").click(function(){
+		$(".nav-mobile ul").slideDown();
+	});
 });
 

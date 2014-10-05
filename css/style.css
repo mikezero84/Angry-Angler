@@ -20,6 +20,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	color:#333333;
 	width: 45%;
 	display: inline-block;
+	*display: inline;
+	zoom: 1;
 	vertical-align: top;
 	position: relative;
 	float: right;
@@ -29,10 +31,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	list-style: none;
 }
 
-.nav-toop ul{
-	list-style: none;
-	position: relative;
-	top: -4px;	
+#nav ul li.selected, #nav ul li:hover{
+	background:url(../images/menu-hover.png) repeat-x top left
 }
 
 .nav-top ul li{
@@ -104,12 +104,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 #nav, nav{
-	display: top;
+	display: block;
 	margin-top: 0;
 }
 
 #nav, nav ul{
 	list-style: none;
+}
+
+#nav ul{
+	list-style: none;	
+}
+
+#nav ul li a{
+	color: #fff;
+}
+
+#nav-bar-about{
+	position: relative;
+	top: -4px;
 }
 
 #nav, nav ul li a{
@@ -141,6 +154,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .box.small{
 	display: inline-block;
+	*display: inline;
+	zoom: 1;
 	width: 31%;
 }
 
@@ -233,12 +248,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .footer .block {
 	display: inline-block;
+	*display: inline;
+	zoom: 1;
 	float: none;
 }
 
 .footer ul.menu {
 	list-style: none;
 	display: inline-block;
+	*display: inline;
+	zoom: 1;
 	width: 10%;
 }
 
