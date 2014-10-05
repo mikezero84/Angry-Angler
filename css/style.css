@@ -406,7 +406,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	}
 
 	.footer .content {
-		margin:0;
+		margin:0 0!important;
+		left: 0px;
+		position: relative;
+	}
+
+	.footer .block{
+		left: 40px;
+    	position: relative;
+    	width: 400px;
+	}
+
+	.footer ul.menu{
+		width: 24%;
 	}
 
 	.footer .copy{
