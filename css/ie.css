@@ -1,8 +1,77 @@
-body{
-	background: #000;
+.nav-top{
+	top: -110px;
 }
 
-.nav-top{
+.nav-bar{
+	top:22px;
+	display:block;
+	margin-top:18px;
+	height: 45px;
+	right: -400px;
+}
+
+#nav{
+	height: 45px;
+}
+
+#nav ul{
+	float:right;
+	height: 45px;
+}
+
+#nav ul li{
+	float:left;
+	height: 45px;
+}
+
+#nav ul li.selected, #nav ul li:hover{
+	background:url(../images/menu-hover.png) repeat-x top left;
+}
+
+#nav ul li:last-child a{
+	background:0 0;
+}
+
+#nav ul li a{
+	display:table-cell;
+	min-width:50px;
+	height:45px;
+	vertical-align:middle;
+	text-align:center;
+	padding:10px 18px 18px 13px;
+	background:url(../images/divider.png) no-repeat top right;
+	font-family:"Trebuchet MS",Arial,Helvetica,sans-serif;
+	font-size:16px;
+	color:#eff1ea;
+	text-transform:uppercase;
 	position: relative;
-	top:-50px;
+	top: 10px;
+}
+
+.form-wrapper input {
+	position: relative;
+	top:2px;
+	left: -30px;
+}
+
+.form-wrapper button{
+	top: -24px;
+}
+
+#nav-bar-about{
+	position: relative;
+	top:40px;
+	right: 32px;
+}
+
+.header.section{
+	z-index: 100;
+}
+
+.breadcrumb{
+	top: 44px;
+}
+
+.breadcrumb-peak{
+	top:44px;
 }
