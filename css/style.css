@@ -353,16 +353,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 		color: #fff;
 	}
 
-	#back{
-		z-index: 1000;
-		left: 0;
-	}
-
-	#next{
-		z-index: 1000;
-		right: 0;
-	}
-
 	.box{
 		margin:5px 10px;
 	}
