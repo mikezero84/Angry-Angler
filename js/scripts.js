@@ -41,7 +41,11 @@ $(document).ready(function(){
 	auto();
 
 	$(".nav-menu").click(function(){
-		$(".nav-mobile ul").slideDown();
+		if (!$(".nav-mobile ul").hasClass("active")){
+			$(".nav-mobile ul").addClass("active").slideDown();
+		}else{
+			$(".nav-mobile ul").removeClass("active").slideUp();
+		}
 	});
 });
 
