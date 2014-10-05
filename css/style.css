@@ -293,7 +293,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	/* Styles */
 	body,html, .section, .section.content, .content, .section.header .content{
 		min-width: 463px;
-		max-width: 463px;
+		max-width: 640px;
+		width: 100%;
 		margin: 0 auto;
 	}
 
@@ -413,13 +414,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	}
 
 	.footer .block{
+		display: block;
 		left: 40px;
     	position: relative;
     	width: 400px;
 	}
 
 	.footer ul.menu{
-		width: 24%;
+		width: 18%;
 	}
 
 	.footer .copy{
