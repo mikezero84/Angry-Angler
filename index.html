@@ -1,13 +1,30 @@
 <!DOCTYPE html> 
 <html> 
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head> 
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<title>Angry Angler</title> 
 	<link rel="stylesheet" type="text/css" href="css/styles.min.css"/> 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--[if lt IE 9]>
+		<script type="text/javascript">
+   		document.createElement("nav");
+   		document.createElement("header");
+   		document.createElement("footer");
+   		document.createElement("section");
+   		document.createElement("article");
+   		document.createElement("aside");
+   		document.createElement("hgroup");
+	</script>
+<![endif]-->
+	
 </head> 
 <body> 
 	<div class="section header"> 
@@ -34,6 +51,15 @@
 						<li><a href="#" title="Contact">contact</a></li> 
 					</ul> 
 				</nav> 
+			</div>
+			<div class="nav-mobile">
+				<h3 class="nav-menu"><a href="#"></a></h3>
+				<ul> 
+					<li class="selected"><a href="index.html" title="Home">home</a></li> 
+					<li><a href="about.html" title="About">about</a></li> 
+					<li><a href="#" title="News">news</a></li> 
+					<li><a href="#" title="Contact">contact</a></li> 
+				</ul> 
 			</div>
 		</div> 
 	</div> 
@@ -117,7 +143,8 @@
 	</div>
 	<script type="text/javascript" src="js/jquery.js"></script> 
 	<script type="text/javascript" src="js/modernizr.js"></script> 
-	<script type="text/javascript" src="js/html5shiv.js"></script> 
+	<script type="text/javascript" src="js/html5shiv.js"></script>
+	<script type="text/javascript" src="js/PIE.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script> 
 </body> 
 </html>

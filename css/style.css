@@ -4,6 +4,9 @@ body{
 	background: #fff;
 }
 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 
 /**** general ****/
 
@@ -26,6 +29,12 @@ body{
 	list-style: none;
 }
 
+.nav-toop ul{
+	list-style: none;
+	position: relative;
+	top: -4px;	
+}
+
 .nav-top ul li{
 	display: inline;
 	margin-right: 5px;
@@ -44,6 +53,7 @@ body{
 	margin-top: 5px;
 	padding: 3px;
 	width: 350px;
+	behavior: url(../js/PIE/PIE.htc);
 }
 
 .form-wrapper input {
@@ -74,6 +84,7 @@ body{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 	position: relative;
 	top: -2px;
+	behavior: url(../js/PIE/PIE.htc);
 }  
 
 .section.header{
@@ -87,9 +98,9 @@ body{
 
 .nav-bar{
 	float: right;
-    position: relative;
-    top: -4px;
-    width: 410px;
+	position: relative;
+	top: -4px;
+	width: 410px;
 }
 
 #nav, nav{
@@ -105,6 +116,10 @@ body{
 	color: #fff;
 }
 
+.nav-mobile{
+	display: none;
+}
+
 /**** header ****/
 
 /**** content ****/
@@ -114,13 +129,14 @@ body{
 
 #title-round{
 	position: relative;
-    top: -24px;
+	top: -24px;
 }
 
 .box{
 	border-radius: 15px;
 	padding: 0;
 	margin:10px 0 5px 10px;
+	behavior: url(../js/PIE/PIE.htc);
 }
 
 .box.small{
@@ -178,7 +194,8 @@ body{
 }
 
 #back{
-	background: url(../images/banners/left-arrow.png)no-repeat;
+	background: url("../images/banners/left-arrow.png");
+	background-repeat: none;
 	height: 40px;
 	width: 39px;
 	position: absolute;
@@ -187,7 +204,8 @@ body{
 }
 
 #next{
-	background: url(../images/banners/right-arrow.png)no-repeat;
+	background: url("../images/banners/right-arrow.png");
+	background-repeat: none;
 	height: 40px;
 	width: 39px;
 	position: absolute;
@@ -196,11 +214,11 @@ body{
 }
 
 .box.banner img {
-    left: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 100%
+	left: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%
 }
 
 /**** content ****/
@@ -225,7 +243,8 @@ body{
 }
 
 .footer .center{
-	background: url("../images/center-footer.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+	background: url("../images/center-footer.png") no-repeat;
+	background-position: center;
 	height: 41px;
 	position: absolute;
 	top: 0;
@@ -245,7 +264,132 @@ body{
 	top: 10px;
 }
 
-
-
 /**** footer ****/
 
+
+/**** Media Queries ****/
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 480px) {
+	/* Styles */
+	body,html, .section, .section.content, .content, .section.header .content{
+		min-width: 480px;
+		max-width: 480px;
+	}
+
+	.header .content h1{
+		background-position: 40%;
+		width: 100%;
+	}
+
+	.nav-top{
+		display: none;
+	}
+
+	.header .content h3{
+		background: url("../images/menu.png") no-repeat #302B2B;
+		background-position: center;
+		border-radius: 5px;
+		height: 40px;
+		width: 40px;
+
+	}
+
+	.nav-mobile{
+		font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+		display: inline-block;
+		position: absolute;
+		right: 5px;
+		top: 20px;
+		width: 70px;
+	}
+
+	.nav-mobile ul{
+		display: none;
+		background: none repeat scroll 0 0 #302B2B;
+		border-radius: 5px;
+		height: 90px;
+		left: -23px;
+		list-style: none outside none;
+		padding: 5px 10px;
+		position: relative;
+		top: -18px;
+		width: 70px;
+	}
+
+	.nav-mobile ul li{
+		height: 24px;
+		left: -7px;
+		position: relative;
+		width: 100%;
+		text-align: center;
+	}
+
+	.nav-mobile ul li a:link, .nav-mobile ul li a:visited{
+		color: #fff;
+	}
+
+	#back{
+		z-index: 1000;
+		left: 0;
+	}
+
+	#next{
+		z-index: 1000;
+		right: 0;
+	}
+
+	.box{
+		margin:5px 10px;
+	}
+
+	.box.small{
+		width: 95%;
+	}
+
+	nav ul{
+		display: none;
+	}
+
+	.header .content h2{
+		margin: 0 0 0 20px;
+		width: 150px;
+	}
+
+	.section.content .content {
+		margin: 0 auto;
+		width: 480px;
+	}
+
+	.breadcrumb, .breadcrumb-peak{
+		top: 62px;
+	}
+
+	.column.left, .column.right {
+		margin-bottom: 15px;
+		width: 95%;
+	}
+
+	.footer{
+		background: url("../images/background-footer350.png") repeat-x scroll left top rgba(0, 0, 0, 0);
+		clear: both;
+		margin: 30px 0;
+		overflow: hidden;
+		padding-top: 55px;
+		position: relative;
+	}
+
+	.footer .center{
+		top: 25px;
+	}
+
+	.footer .content {
+		margin:0;
+	}
+
+	.footer .copy{
+		left: -20px;
+		width: 400px;
+	}
+
+}
